@@ -104,11 +104,11 @@ padding-right: 10px;
 }
   
 .container{
-    width: 30%;
-    
-    background: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  width: 30%;
+  height: 20vh;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .form-check{
     padding-bottom: 20px;
