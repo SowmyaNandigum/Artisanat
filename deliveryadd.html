@@ -71,72 +71,22 @@
   </div>
   <hr class="hr">
 
-  <form>
-    <div class="mb-3">
-      <label for="name1" class="form-label">Full Name</label>
-      <input type="name" class="form-control" id="name1" aria-describedby="Name">
-      
-    </div>
-    <div class="mb-3">
-      <label for="number" class="form-label">Mobile Number</label>
-      <input type="number" class="form-control" id="number" aria-describedby="Number">
-      
-    </div>
-
-    <div class="mb-3">
-      <label for="add" class="form-label">House no,Building,Company</label>
-      <input type="" class="form-control" id="add" aria-describedby="address">
-      
-    </div>
-
-    <div class="mb-3">
-      <label for="add1" class="form-label">Area,street</label>
-      <input type="text" class="form-control" id="add1" aria-describedby="address">
-      
-    </div>
-
-    <div class="mb-3">
-      <label for="add2" class="form-label">Landmark</label>
-      <input type="text" class="form-control" id="add2" aria-describedby="emailHelp">
-      
-    </div>
-
-    <div class="mb-3">
-      <label for="add3" class="form-label">Town/City</label>
-      <input type="text" class="form-control" id="add3" aria-describedby="emailHelp">
-      
-    </div>
-
-    <div class="mb-3">
-      <label for="state" class="form-label">State</label>
-      <input type="text" class="form-control" id="state" aria-describedby="emailHelp">
-      
-    </div>
-
-    <div class="mb-3">
-      <label for="cont" class="form-label">Country</label>
-      <input type="text" class="form-control" id="cont" aria-describedby="emailHelp">
-      
-    </div>
-
+  <form action="" class="contact-form" id="contact-form">
+    <input type="text" placeholder="Your Name" class="name btn-lg" required>
+                 <input type="email" name="" id="" placeholder="Email Address" class="email btn-lg" required>
+                 <input type="number" placeholder="Number" class="number btn-lg" required>
+                 <input type="text" placeholder="Building/company" class="add btn-lg" required>
+                 <input type="text" placeholder="Area/Street" class="place btn-lg" required>
+                 <input type="text" placeholder="Landmark" class="landmark btn-lg" required>
+                 <input type="text" placeholder="Town/City" class="city btn-lg" required>
+                 <input type="text" placeholder="State" class="state btn-lg" required>
+                  <input type="submit" value="Save" class="send-btn btn-lg">
     
 
+  
 
-
-<div class="tog">
     
-      <P class="txt">Save</P>
-      <div class="mb-3 form-check"></div>
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Office</label>
-    </div>
-    
-    <input type="checkbox" class="form-check-input" id="exampleCheck2">
-      <label class="form-check-label" for="exampleCheck2">Home</label>
-    </div>
-  </div>
-    
-  </form>
+                </form>
   <div class="butts">
   
   <button class="but btn-lg"><a href="checkout.html" class="button">Checkout</a></button>
@@ -144,17 +94,17 @@
 
 
 </section>
-<footer class="footer" id="footer">
+<footer class="footer py-3 py-md-5  " id="footer">
 
-  <div class="container">
+  <div class="container py-4 py-md  px-4 px-md-3">
     <div class="row2">
-      <div class="footer-col">
+      <div class="col-lg-3 mb-3">
         <img src="footlogo2.jpeg" alt="">
 
       </div>
-      <div class="footer-col">
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
         <div class="foo">
-        <ul>
+        <ul class="list-unstyled">
           <li class="home"><a href="index.html">Home</a> </li>
           <li class="about"><a href="about.html">About Us</a> </li>
           <li><a href="OUR SERVICES.pdf" class="our">Our Services</a> </li>
@@ -162,7 +112,7 @@
         </ul>
       </div>
       </div>
-      <div class="footer-col">
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
         <div class="space">
         <p class="connect text-center">connect with us</p>
         
@@ -170,9 +120,9 @@
  
  
             <a href="https://www.facebook.com/profile.php?id=100084553360808"><i class='bx bxl-facebook'></i></a>
-            <a href="https://twitter.com/home"><i class='bx bxl-twitter'></i></a>
-            <a href="https://www.instagram.com/artisanate_/"><i class='bx bxl-instagram'></i></a>
-        
+              <a href="https://twitter.com/home"><i class='bx bxl-twitter'></i></a>
+              <a href="https://www.instagram.com/artisanate_/"><i class='bx bxl-instagram'></i></a>
+          
   </div>
 </div>
       </div>
@@ -187,6 +137,13 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 AOS.init();
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("eOzQryYxFD91mS4Ae");
+    })();
 </script>
 </body>
 </html>
