@@ -59,3 +59,57 @@ function openPage()
                 alert("PRODUCT NOT FOUND !!!...")
             }
         }
+
+ function validate(){
+            let name = document.querySelector(".name");
+            let email = document.querySelector(".email");
+            let mobile = document.querySelector(".number");
+            let add = document.querySelector(".add");
+            let place = document.querySelector(".place");
+            let landmark = document.querySelector(".landmark");
+            let town = document.querySelector(".city");
+            let state = document.querySelector(".state");
+            let sendBtn = document.querySelector(".send-btn");
+        
+           sendBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                if(name.value == "" || email.value =="" || mobile.value == "" || add.value == "" || place.value == "" || landmark.value == "" || town.value == "" || state.value == "" )
+                {
+                    emptyerror();
+                } else{
+                    sendmail(name.value, email.value, mobile.value,add.value,place.value,landmark.value,town.value,state.value);
+                    success();
+                }
+            });
+        }
+
+        validate();
+
+        function sendmail(name,email,mobile,add,place,landmark,town,state){
+            emailjs.send("service_p9palkd","template_6qc2mms",{
+                to_name: name,
+                from_name: email,
+                Number: mobile,
+                building:add,
+                Area:place,
+                Landmark:landmark,
+                City:town,
+                State:state,
+
+
+                });
+        }
+        function emptyerror(){
+            swal({
+                title: "OOPS!",
+                text: "Fields cannot be empty!",
+                icon: "error",
+              });
+        }
+        function success(){
+            swal({
+                title: "Address Saved Successfull",
+                text: "Proceed to checkout",
+                icon: "success",
+              });
+        }
