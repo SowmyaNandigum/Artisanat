@@ -23,6 +23,10 @@
       border-style: none;
       border-color: #088F8F;
   }
+  a{
+    text-decoration: none;
+    color: white;
+  }
   .dropdown{
       display: block;
       float: right;
