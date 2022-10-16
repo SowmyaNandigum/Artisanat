@@ -75,6 +75,10 @@ h1{
     align-items: center;
     padding-bottom: 30px;
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 .col{
     height: 319px;
     padding: 0 40px;
