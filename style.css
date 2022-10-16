@@ -78,7 +78,10 @@ color: white;
   color: white;
 }
 
-
+@media only screen and (min-width:993px){
+.dro .bx{
+  color: #088F8F;
+}}
 @media only screen and (max-width:993px) {
   .secnav{
     display: none;
