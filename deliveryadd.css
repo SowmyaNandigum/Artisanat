@@ -111,11 +111,15 @@ h4{
 }
 .but{
   border-radius: 0.9rem;
-  margin-left: 6%;
+  margin-left: 22%;
+  
 }
 
 .butts{
+  padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
+ 
 }
 .footer{
     background: #088F8F;
@@ -180,8 +184,19 @@ ul{
   }
   
 
-
-
+  .contact-form{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    row-gap: 2rem;
+    margin: 5px;
+   
+  }
+a{
+  text-decoration: none;
+  color: white;
+}
 
 
   .mom{
