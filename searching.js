@@ -60,7 +60,9 @@ function openPage()
             }
         }
 
- function validate(){
+
+
+        function validate(){
             let name = document.querySelector(".name");
             let email = document.querySelector(".email");
             let mobile = document.querySelector(".number");

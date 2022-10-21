@@ -57,88 +57,46 @@
       font-family: sans-serif;
       transition: 0.3s ease;
   }
-.searchinput{
-    width: 20rem;
-  }
-.mom{
-  float: right;
-
-padding-right: 10px;
-
-}
-
-
-.titles{
-  display: inline-flex;
-        
-        column-gap: 1.5rem;
-        list-style: none;
-
-}
-.titles :hover{
-  color: #010425;
-}
-.titles li{
-  padding-top: 5px;
-}
-.nav-links{
-  color: white;
-  padding: 3px 3px;
-}
-
-.main{
+.products{
     background: #010425;
-    padding: 20px 0;
 }
-.front .bx{
+h1{
+    color: white;
+    padding: 10px 0px;
+    padding-bottom: 35px;
+}
+.head .bx{
+    font-size: 40px;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.col{
+    height: 319px;
+}
+.rou{
+    position: relative;
+    height: 260px;
+    width: 75%;
+    left: 12%;
+
+}
+.fu{
+    background: #088F8F;
+    border-style: none;
+}
+.fu .bx{
     font-size: 30px;
     color: white;
-    background: #010425;
-}
-.buttons{
-    display: inline-block;
-    padding-top: 23px;
-}
-
-.butt2{
-    margin-top: 20px;
-    padding-left: 27px;
-    padding-right: 27px;
-}
-
-.container{
-    max-width: 1100px;
-    margin: auto;
-    overflow: auto;
-    padding: 0 2rem;
-}
-
-.card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    margin-bottom: 2rem;
-    background-color: #010425;
-
-}
-.txt{
-    color: white;
-    padding: 10px 0;
-}
-.card img{
-    width: 90%;
-    height: 40vh;
-    border-radius: 0.8rem;
 }
 .footer{
     background: #088F8F;
-  }
-  
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  ul{
+}
+ul{
     list-style: none;
   }
   .row2{
@@ -152,6 +110,7 @@ padding-right: 10px;
   }
   .footer-col a{
     color: white;
+    text-decoration: none;
   }
   
   .social{
@@ -183,8 +142,6 @@ padding-right: 10px;
     justify-content: center;
     align-items: center;
   }
-  
-  
   .about{
     padding: 6px 0;
   }
@@ -197,16 +154,50 @@ padding-right: 10px;
   .space{
     padding-top: 18px;
   }
-  .title{
-    color: white;
+  
+
+
+
+
+
+  .mom{
+    float: right;
+  
+  padding-right: 10px;
+  
   }
-  .price{
-    color: white;
+  
+  
+  .titles{
+    display: inline-flex;
+          
+          column-gap: 1.5rem;
+          list-style: none;
+  
   }
-  a{
+  .titles li{
+    padding-top: 5px;
+  }
+  .nav-links{
+    color: white;
+    padding: 3px 3px;
     text-decoration: none;
   }
-
-  #quantity{
-    height: 6vh;
+  .searchinput{
+    width: 20rem;
   }
+.cent{
+    color: white;
+    padding-top: 5px;
+}
+.copyright{
+    color: white;
+}
+.group{
+  display: inline;
+
+}
+p{
+  color: white;
+  
+}

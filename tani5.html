@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>cat</title>
     <link rel="stylesheet" href="p.css">
+    
+    
   </head>
   <body>
     
@@ -39,9 +41,9 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li><a href="cart.html">Your orders</a></li>
-                
+                 
                   <li><a href="favourite.html">Favourites</a></li>
-            
+                  
                   <li><a href="#">LOG OUT</a></li>
               </ul>
             </div>    
@@ -64,19 +66,21 @@
         <a href="tani.html" class="front"><i class='bx bx-chevron-left'></i></a>
         <main class="container">
             <section class="card" data-aos="fade-right" data-aos-duration="500" data-aos-easing="linear">
-                <img src="T-SHIRTS/699.webp" alt="">
-            <div class="idk2">
-                <p class="txt">Eyebogler<br>367/-</p>
-                <i class='bx bx-x'></i>
-            </div>
+                
+            
             <div class="buttons">
-            <div class="but1"><a href="cart.html"> <button class="butt1 btn-lg">Add to cart</button> </a></div>
+              <img id="pic"  src="T-SHIRTS/699.webp" alt="">
+              <p class="txt" id="product">Eyebogler</p>
+              <p class="txt" id="price">   367/-</p>
+              <input type="number" id="quantity" placeholder="Quantity" >
+             <button class="butt1 btn-lg" id="add">Add to cart</button>
      <div class="but2"> <a href="deliveryadd.html"> <button class="butt2 btn-lg">Buy Now</button> </a></div>
     </div>
     
         </main>
        
     </section>
+
     <footer class="footer py-3 py-md-5  " id="footer">
 
       <div class="container py-4 py-md  px-4 px-md-3">
@@ -121,5 +125,78 @@
   <script>
     AOS.init();
   </script>
+
+
+
+
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAhvfnV7nMgWl9s_LoSFxGoLxkp-usToJk",
+    authDomain: "artisanat-2ffdd.firebaseapp.com",
+    projectId: "artisanat-2ffdd",
+    storageBucket: "artisanat-2ffdd.appspot.com",
+    messagingSenderId: "895251410116",
+    appId: "1:895251410116:web:32e814f4751708dddead91"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
+  import {getDatabase,set, get, update, remove,ref,child} from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js"
+
+  const db = getDatabase();
+var quantity = document.querySelector("#quantity");
+var product = document.querySelector("#product");
+var price = document.querySelector("#price");
+var pic = document.querySelector("#pic");
+
+var insertBtn = document.querySelector("#add");
+
+function insert(){
+set( ref(db, "cart/" + product.innerHTML),  {
+      quantity : quantity.value,
+      product : product.innerHTML,
+      price : price.innerHTML,
+      
+      
+      
+})
+
+.then(()=>{
+  alert("Added To cart!")
+})
+.catch((error)=>{
+  alert(error)
+});
+}
+
+function removeData(){
+  remove(ref(db,"cart/"))
+  .then(()=>{
+    alert("data removed successfully");
+  })
+  .catch((error)=>{
+  alert("unsuccessful,error"+error);
+  });
+}
+
+
+insertBtn.addEventListener('click', insert);
+
+
+
+</script>
+
+
 </body>
+
+
 </html>
