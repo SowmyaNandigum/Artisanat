@@ -113,6 +113,11 @@ for(let i=0; i < carts.length; i++){
     })
 }
 
+const d =document.getElementById("p2").innerText[0]
+
+
+var addToCart = document.getElementsByClassName('add-to-cart')[0];
+
 
 
 function cartNumbers(product)

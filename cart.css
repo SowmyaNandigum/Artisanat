@@ -213,8 +213,27 @@ padding-bottom: 2rem;
   .space{
     padding-top: 18px;
   }
+  #group{
+    display: inline-flex;
+  }
+  p{
+    color: white;
+    padding-left: 25px;
+    font-size: 20px;
+    
+  }
+  .card .bx{
+color: white;
+font-size: 40px;
+float: right;
+  }
+#remove{
   
-
+  font-size: 20px;
+  padding: 0 10px;
+ 
+  border-radius: 10px;
+}
 
 
 
